@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+
+### Applications Code Container #############################
+
+    applications:
+      volumes:
+        - ${APPLICATION}:/var/www
+        - ${PLAYSTER_INTERFACE_SRC_PATH}:/app
